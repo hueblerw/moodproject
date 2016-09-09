@@ -4,7 +4,7 @@
 }*/
 
 .bg-1 {
-      background-color: #58F858;
+      background-color: #FFCC00;
       padding-bottom: 20px;
       padding-top: 20px;
   }
@@ -21,6 +21,7 @@
   }
 
 .bg-4 {
+      margin-top: 50px;
       background-color: #EA14D5;
       padding-bottom: 50px;
   }
