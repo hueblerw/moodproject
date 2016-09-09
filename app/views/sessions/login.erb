@@ -1,0 +1,17 @@
+
+<%= erb :"shared/_errors", layout: false, locals: {errors: @errors} %>
+
+<div class="container-fluid bg-4">
+  <h2>Login</h2>
+  <form id="login_form" action="/sessions" method="post">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" name="username" placeholder="Enter username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" name="password" placeholder="Enter password">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
