@@ -1,7 +1,11 @@
 <%= erb :"_spotify", layout: false, locals: {uri: @uri} %>
 
 <div id="display-container" class="container bg-2 text-center">
-  <h2><%= logged_in_user.username.capitalize %> how do you FEEL...(ya know...)...</h2>
+  <% if logged_in? %>
+    <h2><%= logged_in_user.username.capitalize %> how do you FEEL...(ya know...)...</h2>
+  <% else %>
+    <h2>How do you FEEL...(ya know...)...</h2>
+  <% end %>
   <form id="get_the_feeling" action="/playlists" method="post">
     <div class="form-group">
       <input type="text" class="form-control" name="mood" placeholder="you know, like...sarcastic">
